@@ -22,11 +22,19 @@
               "src/favicon.ico",
               "src/assets"
             ],
+            
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              {
+                "input": "src/assets/stylesWhiteMode.css",
+                "bundleName": "whiteMode",
+                "inject": false
+              }
             ],
+            
             "scripts": []
           },
+          
           "configurations": {
             "production": {
               "budgets": [
@@ -89,6 +97,7 @@
               "src/favicon.ico",
               "src/assets"
             ],
+           
             "styles": [
               "src/styles.css"
             ],

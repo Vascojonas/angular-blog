@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { AppService } from 'src/app/app.service';
 
 @Component({
   selector: 'app-big-card',
@@ -15,7 +16,11 @@ export class BigCardComponent implements OnInit {
     @Input()
     cardDescription:string ="";
 
-  constructor() { }
+    isDarkMode:boolean=true;
+
+  constructor(private appService: AppService) {
+    this.appService.isDarkMode.subscribe( d =>{this.isDarkMode = d;})   
+  }
 
   ngOnInit(): void {
   }

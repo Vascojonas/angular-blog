@@ -10,8 +10,8 @@
     <h1><a [routerLink]="['content', id]">{{cardTitle}}</a></h1>
   </div>
   <div class="big-card__description">
-    <p>
-      <a [routerLink]="['content', id]">
+    <p >
+      <a [routerLink]="['content', id] " [ngClass]="{'dark':  !isDarkMode}">
           {{cardDescription}}
       </a>
     </p>

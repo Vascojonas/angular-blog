@@ -1,9 +1,34 @@
+
 <div class="container__menu-bar">
-    <ul>
-        <li><a href="https://www.linkedin.com/in/vascojonas/">Linkedin</a></li>
-        <li><span>•</span></li>
-        <li><a href="https://github.com/vascojonas"></a>GitHub</li>
-        <li><span>•</span></li>
-        <li><a href="#"></a>Youtube</li>
-    </ul>
+  <ul >
+    <li>
+      <a href="https://www.linkedin.com/in/vascojonas/">
+        <i class="fa-brands fa-linkedin">&nbsp;</i>
+        Linkedin
+      </a>
+    </li>
+    <li><span>•</span></li>
+    <li>
+      <a href="https://github.com/vascojonas">
+        <i class="fa-brands fa-github">&nbsp;</i>
+        GitHub
+      </a>
+    </li>
+    <li><span>•</span></li>
+    <li>
+      <a href="#">
+        <i class="fa-brands fa-youtube">&nbsp;</i>
+        Youtube
+      </a>
+    </li>
+    <li>
+        <button class="display-mode" (click)="changeDisplayMode()">
+            <i class="fa-regular fa-sun" *ngIf="isDarkMode; else darkmode" ></i>
+            <ng-template #darkmode>
+                <i class="fa-solid fa-moon"></i>
+            </ng-template>
+        </button>
+    </li>
+  </ul>
+
 </div>

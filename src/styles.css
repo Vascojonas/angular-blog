@@ -8,6 +8,19 @@
     color:white;
 }
 
+
+
 a{
     text-decoration: none;
+}
+
+.dark{
+    color: black !important;
+}
+
+
+
+
+.bb{
+    border: 1px solid red;
 }

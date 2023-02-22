@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { AppService } from 'src/app/app.service';
 import { dataFake } from '../../data/dataFake';
 
 @Component({
@@ -9,13 +10,15 @@ import { dataFake } from '../../data/dataFake';
 })
 export class ContentComponent implements OnInit {
 
+  isDarkMode:boolean=true;
+
   photoCover:string = ""
   contentTitle:string =""
   contentDescription:string = ""
   private id:string | null ="";
 
-  constructor(private route:ActivatedRoute) {
-      
+  constructor(private route:ActivatedRoute,  private appService: AppService) {
+    this.appService.isDarkMode.subscribe( d =>{this.isDarkMode = d;})   
   }
 
   ngOnInit(): void {

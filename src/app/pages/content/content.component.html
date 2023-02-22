@@ -4,13 +4,20 @@
          alt=""
         >
     </div>
-    <div class="content__title">
-        <h1>{{contentTitle}}</h1>
-        <hr>
-    </div>
+
     <div class="content__description">
-        <a [routerLink]="['']"><< Voltar</a>
-        <p>
+        <div class="content__title">
+            <h1>{{contentTitle}}</h1>
+            <a [routerLink]="['']"><i class="fa-solid fa-arrow-left">&nbsp;</i> Voltar</a>
+        </div>
+        
+        <p [ngClass]="{'dark':  !isDarkMode}">
+            {{contentDescription}}
+            {{contentDescription}}
+            {{contentDescription}}
+            {{contentDescription}}
+            {{contentDescription}}
+            {{contentDescription}}
             {{contentDescription}}
         </p>
     </div>

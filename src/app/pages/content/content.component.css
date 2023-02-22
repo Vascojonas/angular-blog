@@ -1,17 +1,17 @@
 .container__content{
-    border: 1px solid white;
-    width: 100%;
-    height: 100vh;
-
+    margin: 0 auto;
+    width: 75%;
     margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    clear: both;
 }
 
+.content__cover{
+    float: left;
+}
 
 .content__cover > img{
     margin-top: 10px;
+    margin-right: 15px;
     border: 3px solid rgb(123, 123, 123);
     border-radius: 5px;
     width: 500px;
@@ -19,11 +19,22 @@
     height: 300px;
 }
 
+.content__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .content__description{
-    margin-top: 15px;
+ text-align: justify;
+}
+
+.content__description > p{
+    font-size: 18px;
 }
 
 .content__description > p {
     margin-top: 20px;
     color: rgb(208, 199, 199);
 }
+
