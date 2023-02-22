@@ -1,0 +1,27 @@
+@media screen and (max-width: 396px) {
+    .menu-text{
+        display: none;
+    }
+
+    .container__menu-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    } 
+    
+    .container__menu-bar > ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+         align-items: center;
+    }
+    
+    .container__menu-bar > ul > li{
+        list-style-type: none;
+    }
+    
+    .display-mode{
+        font-size: 15px;
+    }
+}

@@ -5,7 +5,7 @@ import { AppService } from 'src/app/app.service';
 @Component({
   selector: 'app-menu-bar',
   templateUrl: './menu-bar.component.html',
-  styleUrls: ['./menu-bar.component.css']
+  styleUrls: ['./menu-bar.component.css','./menu-bar.responsive.component.css']
 })
 export class MenuBarComponent implements OnInit {
   @Output() newChangeDisplayEvent = new EventEmitter<boolean>();
